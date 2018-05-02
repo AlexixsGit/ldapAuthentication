@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <title>LDAP</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+	
+</head>
+<body>
+	
+
+	<!-- Add page specific code/html START -->
+	
+	    <div class="container">
+	  
+	 <form class="form-signin" name="loginForm" th:action="@{/login}" action="/login" method="POST">	
+        <h1 style="color:blue" class="form-signin-heading">Bienvenido al Portal Administrativo Mandela</h1>
+        <label for="username" class="sr-only">Usuario</label>
+        <input type="text" name="username" id="username" class="form-control" placeholder="Usuario" required="required" autofocus="autofocus" />
+        <label for="password" class="sr-only">Contraseña</label>
+        <input type="password" name="password" id="password" class="form-control" placeholder="contraseña" required="required" />
+        
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Continuar</button>
+      </form>
+
+    </div> <!-- /container -->
+    
+    
+</body>
+</html>
